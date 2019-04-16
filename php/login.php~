@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>login</title>
+	</head>
+	<body>
+		<?php
+			$login = $_POST["login"];
+			$senha = $_POST["senha"];
+			echo $login.'<br>';
+			echo $senha;
+			?>
+	</body>	
+
+</html>
