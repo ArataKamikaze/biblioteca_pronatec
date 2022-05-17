@@ -4,10 +4,14 @@
 Sistema de gestão de biblioteca escolar criado como projeto de conclusão de curso do curso técnico em informárica do PRONATEC
 
             
-## Screenshots
 
-|![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here) |![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)|
+## Screenshots
+|![App Screenshot](https://github.com/ArataKamikaze/biblioteca_pronatec/blob/master/images/login.png) |![App Screenshot](https://github.com/ArataKamikaze/biblioteca_pronatec/blob/master/images/login.png)|
 |:-|:-|
+|![App Screenshot](https://github.com/ArataKamikaze/biblioteca_pronatec/blob/master/images/login.png)|![App Screenshot](https://github.com/ArataKamikaze/biblioteca_pronatec/blob/master/images/login.png)|
+|![App Screenshot](https://github.com/ArataKamikaze/biblioteca_pronatec/blob/master/images/login.png)| ![App Screenshot](https://github.com/ArataKamikaze/biblioteca_pronatec/blob/master/images/home.png)|
+
+
 
 ## Authors
 
