@@ -1,81 +1,45 @@
-<doctype html>
-<html>
-	<head>
-		<title>Cadastro de alunos</title>
-		<meta charset="UTF-8">
-		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<style type="text/css">
-		::placeholder, ::value{
-			text-align: center;		
-		}
-		</style>
-	</head>		
-	<body style="background-image: url(../images/background_cadastro_alunos_01.jpg);background-repeat: no-repeat;background-size: cover;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md">
+<div class="row justify-content-center align-items-center" style="margin-top:3%;">
+	<div class="col col-sm col-md col-lg col-xl-9" style="background: #f0f0f0; padding:50px;">
+		<form action="incluir.php?type=aluno"  method="GET">
+			<input type="hidden" name="type" value="<?php echo $type; ?>">
+			<input type="hidden" name="id" value="<?php echo $id; ?>">
+			<div class="form-group">
+				<h1 class="text-center">Cadastro de Aluno</h1>
+			</div>
+			<div class="form-group">
+				Nome:<br>
+				<input type="text"  name="nome_aluno" placeholder="Nome do Aluno" class="form-control">
+			</div>
+			<div class="form-group">
+				Sexo:<br>
+				<select name="sexo_aluno"class="form-control">
+					<option value="F">Feminino</option>
+					<option value="M">Masculino</option>							
+				</select>
+			</div>				
+			<div class="form-group">
+				E-mail:<br>
+				<input type="email"  name="email_aluno" placeholder="DarthVader@imperio.com" class="form-control">
+			</div>
+			<div class="form-group">
+				Telefone:<br>	
+				<input type="tel" name="tel_aluno" id="telefone" placeholder="(00) 0000-0000" class="form-control"pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" />
+				<script type="text/javascript">$("#telefone").mask("(00) 0000-00009");</script>						
+			</div>
+			<div class="form-group">
+				Turma:<br>	
+				<input type="number"  name="turma_aluno" placeholder="Turma " class="form-control">							
+			</div>
+			<div class="form-group">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 offset-md-3"><button type="reset" class=" btn btn-danger">Limpar</button></div>
+						<div class="col-md-3"><button class=" btn btn-primary">Enviar</button></div>
+					</div>
 				</div>
 			</div>
-			<div>
-				<form action="" method="POST"style="margin-top:15%;">
-				<div style="background-color: rgba(255,255,255,0.5);width: 100%;padding: 40px;border-radius:30px; font-weight: bold;">
-					<div class="row">
-						<div class="col-md-3">
-							Nome:<br>
-							<input type="text"  name="nome_aluno" placeholder="Nome do Aluno" class="form-control" required="required">
-						</div>
-						<div class="col-md-3">
-							CPF:<br>
-							<input type="number"  name="cpf_aluno" placeholder="CPF do Aluno" class="form-control" required="required">
-						</div>
-						<div class="col-md-3">
-							E-mail:<br>
-							<input type="email"  name="email_aluno" placeholder="E-mail do Aluno" class="form-control" required="required">
-						</div>
-						<div class="col-md-3">
-							Data de Nascimento:<br>
-							<input type="date"  name="nasc_aluno" placeholder="dd/mm/aa" class="form-control" required="required">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-3">
-							Telefone:<br>	
-							<input type="number"  name="tel_aluno" placeholder="Telefone do Aluno" class="form-control" required="required">							
-						</div>
-						<div class="col-md-3">
-							CEP:<br>
-							<input type="number"  name="cep_aluno" placeholder="CEP do Aluno" class="form-control" required="required">
-						</div>
-						<div class="col-md-4">
-							Bairro:<br>
-							<select name="bairro_aluno" class="form-control" required="required">
-								<option>granja de freitas</option>
-							</select>
-						</div>
-						<div class="col-md-2">
-							Número:<br>
-							<input type="number"  name="num_aluno" placeholder="Nº" class="form-control" required="required">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							Endereço:<br>
-							<input type="text"  name="end_aluno" placeholder="Rua/av." class="form-control" required="required">
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-md-12" align="center">
-							<button type="submit" class="btn btn-primary">Entrar</button>	
-						</div>
-					</div>
-				</div>
-				</form>
-			</div>
-		</div>
-	</body>
-endereço
-telefone
+		</form>
+	</div>
+</div>
 
 
-</html>

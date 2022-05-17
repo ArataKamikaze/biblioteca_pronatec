@@ -1,0 +1,9 @@
+<?php
+    include("header.php");
+    include("check.php");
+    include("session.php");
+    include("sidebar.php");
+    include("db.php");
+    include('alt_'.$type.'.php');
+    include("endfile.php");
+?>
